@@ -1,0 +1,154 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+#container{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+}
+.all{
+	height: 100%;
+	width: 50%;
+}
+
+#left{
+
+}
+#nav{
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	flex: 1;
+	text-align: center;
+	align-items: center;
+}
+#menu-img{
+	display: none;
+	cursor: pointer;
+}
+#nav #menu-img img{
+	width: 50px;
+	margin: 30px;
+}
+#nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}
+#nav ul li a:hover{
+	color: #ff5ea1;
+}
+#intro{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#intro .col-1{
+	margin: 0 50px;
+}
+.col-1 h2{
+	font-size: 54px;
+}
+.col-1 h3{
+	font-size: 30px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+button{
+	width: 140px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	background: linear-gradient(to right,#fb5283,#ff3527);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: width 0.5s;
+}
+button img{
+	width: 30px;
+	display: none;
+}
+button a{
+	text-decoration: none;
+	color: #fff;
+}
+button:hover img{
+	display: block;
+}
+button:hover{
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#right{
+	display: flex;
+	align-items: center;
+}
+#right img{
+	margin-right: 4%;
+	width: 96%;
+}
+
+
+@media only screen and (max-width:500px){
+
+	.all {
+	    width: 100%;
+	}
+	#nav{
+		justify-content: right;
+	}
+	#nav ul{
+		width: 100%;
+		background: linear-gradient(#ff54a2,#ff5754);
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+	#nav ul li a:hover{
+		color: #450924;
+	}
+	#nav ul li{
+		display: block;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	#nav ul li a{
+		color: #fff;
+	}
+	#menu-img{
+		display: block;
+	}
+	#menulist{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	#container{
+		flex-direction: column-reverse;
+		margin: 5%;
+		width: 90%;
+		height: 100vh;
+	}
+	.col-1 h2 {
+	    font-size: 35px;
+	}
+	.col-1 h3 {
+	    font-size: 15px;
+	}
+	#intro {
+    	height: 40vh;
+    }
+}

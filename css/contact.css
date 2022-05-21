@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+#container{
+	height: 80vh;
+	width: 100%;
+	display: flex;
+}
+#menu-img{
+	display: none;
+	cursor: pointer;
+}
+
+#right{
+	background-color: #140d0d;
+    width: 30%;
+    color: white;}
+#nav{
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#nav #menu-img img{
+	width: 50px;
+	margin: 30px;
+}
+#nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+}
+#nav ul li a:hover{
+	color: #ff5ea1;
+}
+#intro{
+	margin: 5%;
+	height: 100%;
+	width: 90%;
+	justify-content: center;
+}
+
+#left{
+	justify-content: center;
+    align-items: center;
+	width: 70%;
+	background-image: url(img/chef.jpg);
+	display: flex;
+}
+#left img{
+	height: 100%;
+    margin: 2% 5%;
+}
+#about{
+	margin-top: 40px;
+	width: 100%;
+}
+#about .about-body{
+	margin: 5% 5%;
+}
+#about h2{
+	font-size: 24px;
+	font-weight: 800;
+}
+#about p{
+	font-size: 16px;
+}
+#social-icon img{
+	height: 18px;
+	width: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+	#menu-img{
+		display: block;
+	}
+	#menulist{
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	#nav ul li a:hover{
+		color: #450924;
+	}
+	#nav{
+		justify-content: right;
+		text-align: center;
+	}
+	#nav ul{
+		width: 100%;
+		background: linear-gradient(#ff54a2,#ff5754);
+		position: absolute;
+		top: 75px;
+		right: 0;
+		z-index: 2;
+	}
+	#nav ul li{
+		display: block;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	#nav ul li a{
+		color: #fff;
+	}
+
+
+
+	#container{
+		height: 100%;
+		align-items: center;
+    	flex-direction: column;
+	}
+	#left{
+		width: 90%;
+	}
+	#right{
+		width: 90%;
+		border-radius: 10px;
+	}
+}
